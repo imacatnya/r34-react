@@ -14,10 +14,10 @@ interface KofiButtonProps {
 }
 
 export function KofiButton(props: KofiButtonProps) {
-  const { id, label } = props
+  const { label } = props
 
   return (
-    <LinkButton title={label} href={`https://ko-fi.com/${id}`} target='_blank' rel='noopener noreferrer'>
+    <LinkButton title={label} href={`#`} target='_blank' rel='noopener noreferrer'>
       <KofiImage src='https://ko-fi.com/img/cup-border.png' className='kofiimg' alt='Ko-Fi button' />
       <span>{label}</span>
     </LinkButton>
@@ -33,7 +33,7 @@ export function PatreonButton(props: PatreonButtonProps) {
   const { name, label } = props
 
   return (
-    <LinkButton title={label} href={`https://www.patreon.com/${name}`} target='_blank' rel='noopener noreferrer'>
+    <LinkButton title={label} href={`#`} target='_blank' rel='noopener noreferrer'>
       <PatreonIcon color='currentcolor' />
       <span>{label}</span>
     </LinkButton>

@@ -39,10 +39,6 @@ export default function Menu() {
       <LocationStyledLink current={current} to={RouteName.PREFERENCES}>
         <span>Preferences</span>
       </LocationStyledLink>
-
-      <LocationStyledLink current={current} to={RouteName.ABOUT}>
-        <span>About</span>
-      </LocationStyledLink>
     </MenuBar>
   )
 }
